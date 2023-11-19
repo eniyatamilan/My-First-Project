@@ -1,0 +1,19 @@
+Copy code
+#include <stdio.h>
+
+int countDigits(int num) {
+    int count = 0;
+
+    while (num != 0) {
+        num /= 10;
+        count++;
+    }
+
+    return count;
+}
+
+int main() {
+    int num = 7890;
+    printf("Number of digits in %d: %d\n", num, countDigits(num));
+    return 0;
+}
